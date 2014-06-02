@@ -1,0 +1,64 @@
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/topic_title"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/darkred"
+            android:gravity="center"
+            android:text="店面展示"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="27dp"
+            android:layout_height="29dp"
+            android:layout_alignBottom="@+id/topic_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back"
+             />
+
+    </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp" 
+                android:background="@color/gold"
+                >
+            </TabWidget>
+        </HorizontalScrollView>
+        <!-- tabhost必须有个framelayout布局 -->
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

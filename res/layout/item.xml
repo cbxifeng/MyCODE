@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/m_thumb"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+             android:paddingBottom="8dp"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:layout_weight="0.68"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/m_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:layout_weight="2"
+                android:text="    "
+                android:textColor="#0A0A0A"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/father"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/m_description"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/m_edittime"
+                android:layout_weight="1"
+                android:text="    "
+                android:textColor="#5C5C5C"
+                android:textSize="10dip" />
+
+            <Button
+                android:id="@+id/labutton"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/yuding"
+                android:focusable="false"
+                android:textColor="#5C5C5C"
+                android:textSize="15dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/m_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:text="  1 111111 "
+                android:textColor="@color/darkred"
+                android:textSize="15dip" />
+
+            <TextView
+                android:id="@+id/m_price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/m_price"
+                android:text="   2222222222222222 "
+                android:textColor="@color/black"
+                android:textSize="15dip" />
+
+        </RelativeLayout>
+       
+    </LinearLayout>
+
+</LinearLayout>

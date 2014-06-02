@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="50dip"
+         android:background="#8B0000"
+         android:orientation="horizontal"
+        >
+        <Button 
+            android:id="@+id/m_back"
+            android:text="返回"
+            style="@style/button_style"
+            android:textColor="#FFFFFF"
+            android:background="#8B0000"
+            />
+
+        <TextView
+            android:id="@+id/m_set"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="设置"
+            android:textSize="30dip"
+            android:textColor="#FFFFFF"
+           style="@style/button_style"></TextView>
+
+    </RelativeLayout>
+<TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="个人账号"
+    android:textColor="#BFBFBF"
+    android:textSize="20dip"
+    
+    />
+<ImageView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/line"
+    />
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+   <ImageView 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/icon_circle_bule"
+       />
+
+   <TextView
+       android:id="@+id/m_member"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="账号管理"
+       android:textSize="25dip" 
+       android:layout_weight="1"
+       />
+    <TextView 
+       android:id="@+id/m_flag"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="未登录"
+       android:paddingRight="3dip"
+        />
+</LinearLayout>
+
+<!-- <TextView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="系统设置"
+    android:textColor="#BFBFBF"
+    android:textSize="20dip"
+    ></TextView>
+<ImageView 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/line"
+    /> -->
+</LinearLayout>

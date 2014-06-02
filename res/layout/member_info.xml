@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/darkred" >
+/
+
+        <Button
+            android:id="@+id/m_back"
+            style="@style/button_style"
+            android:background="@drawable/promotion_bt"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/m_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="25dip" />
+
+        <Button
+            android:id="@+id/m_forget"
+            style="@style/button_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@color/white"
+            android:text="忘记密码" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/m_user_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="请输入账号" />
+
+    <EditText
+        android:id="@+id/m_user_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:hint="请输入密码"
+        android:password="true" />
+
+    <LinearLayout
+        android:id="@+id/m_rela3"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip" >
+
+        <Button
+            android:id="@+id/m_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:text="登录" />
+
+        <Button
+            android:id="@+id/m_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:text="注册" />
+    </LinearLayout>
+
+</LinearLayout>

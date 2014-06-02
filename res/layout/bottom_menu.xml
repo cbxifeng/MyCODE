@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#393939" >
+  <TextView
+            android:id="@+id/toolbarProduct"
+            style="@style/bottom_style2"
+            android:drawableTop="@drawable/icon_product_hui"
+            android:text="产品" >
+        </TextView>
+    </LinearLayout>
+    
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#393939" >
+
+        <TextView
+            android:id="@+id/toolbarDongtai"
+            style="@style/bottom_style2"
+            android:background="#393939"
+            android:drawableTop="@drawable/icon_news_hui"
+            android:text="动态" >
+        </TextView>
+          </LinearLayout>
+          
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#393939" >
+
+        <TextView
+            android:id="@+id/toolbarCircle"
+            style="@style/bottom_style2"
+            android:drawableTop="@drawable/icon_pic_hui"
+            android:text="相册" >
+        </TextView>
+    </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#393939" >
+
+        <TextView
+            android:id="@+id/toolbarCenter"
+            style="@style/bottom_style2"
+            android:drawableTop="@drawable/icon_circle_hui"
+            android:text="圈子" >
+        </TextView>
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#393939" >
+
+        <TextView
+            android:id="@+id/toolbarAbaout"
+            style="@style/bottom_style2"
+            android:drawableTop="@drawable/icon_consult_hui"
+            android:text="咨询" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#63B8FF" >
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logobg"
+            android:gravity="center"
+            android:text="内容定制"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+   <Button 
+       android:id="@+id/button1"
+   android:background="#FF0000"
+    android:text="完成"
+   android:layout_width="50dp"
+   android:layout_height="50dp" 
+    />
+      </RelativeLayout> 
+<Button 
+    android:text="已订阅栏目"
+   android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+    
+    />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_weight="1"
+        >
+
+        <ListView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+<Button 
+    android:text="可定阅栏目"
+   android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+    
+    />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+         android:layout_weight="1"
+        >
+
+        <ListView
+            android:id="@+id/alist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

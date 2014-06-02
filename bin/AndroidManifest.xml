@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.duihao.promotion.main.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="14" />
+  
+    <application  
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.duihao.promotion.main.android.UiWlcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.MainActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.WelcomeThis" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.Main" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.WelcomeUi" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.AppActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.PicActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.Circle" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.VidioActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.http.android.Member_info" >
+        </activity>
+        <activity android:name="com.duihao.promotion.http.android.NewsAdd" >
+        </activity>
+        <activity android:name="com.duihao.promotion.http.android.RegisterActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.http.android.Web_View" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.AboatActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.GalleryActivity" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.IndustryTrends" >
+        </activity>
+        <activity android:name="com.duihao.promotion.gridview.android.CollectList" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.Add_Topic" >
+        </activity>
+        <activity android:name="map.android.MapMainActivity" >
+        </activity>
+        <activity android:name="map.android.M_Query" >
+        </activity>
+        <activity android:name="com.duihao.promotion.http.android.PicServiceTitle" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.DingYue" >
+        </activity>
+   
+       <activity android:name="com.duihao.promotion.ui.android.DongTai" >
+        </activity>
+        
+         <activity android:name="com.duihao.promotion.ui.android.PicServiceTitle" >
+        </activity>
+        
+         <activity android:name="com.duihao.promotion.ui.android.DongTaiActivity" >
+        </activity>
+
+          <activity android:name="com.duihao.promotion.ui.android.ZiXun" >
+        </activity>
+       
+           <activity android:name="com.duihao.promotion.map.android.MapMainActivity" >
+        </activity>
+        
+         <activity android:name="com.duihao.promotion.ui.android.CollectList" >
+        </activity>
+         <activity android:name="com.duihao.promotion.service.android.MyApplication" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.YuDing" >
+        </activity>
+        <activity android:name="com.duihao.promotion.ui.android.CurclePin" >
+        </activity>
+        <activity android:name="com.duihao.baidu.test.MainActivity" 
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+         <activity android:name="com.duihao.baidu.test.MapSerch" 
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+        <service android:name="com.duihao.promotion.http.android.MapMaths" >
+        </service>
+        <service
+            android:name="com.duihao.promotion.service.android.WelcomeService"
+            android:enabled="true" />
+         <!-- 定位需要的服务 -->
+          <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+</manifest>

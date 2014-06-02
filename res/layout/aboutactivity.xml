@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+     >
+    <ImageView
+        android:id="@+id/perthumb"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" 
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/percontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/perthumb"
+        android:text="加载内容......" />
+
+<Button
+    android:id="@+id/connect_us"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:text="联系我们" />
+
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

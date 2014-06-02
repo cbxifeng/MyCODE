@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue_light1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/Father"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@color/darkred" >
+
+        <Button
+            android:id="@+id/m_back"
+            android:layout_width="29dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/back" />
+
+        <Button
+            android:id="@+id/m_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="我的收藏"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/collectlist"
+        android:divider="@drawable/itemline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

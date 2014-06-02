@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+       android:background="@color/darkred" >
+       
+        <Button
+            android:id="@+id/m_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:gravity="center"
+            android:text="评论动态"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+      </RelativeLayout>
+<LinearLayout 
+     android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+    >
+    
+     <WebView
+         android:id="@+id/m_web_view"
+         android:layout_width="fill_parent"
+         android:layout_height="match_parent" />
+
+</LinearLayout>
+   
+
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+      >
+
+        <EditText
+            android:id="@+id/quan_Text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:hint="说几句，转一下"
+            android:maxLines="4"
+            android:maxHeight="100dip"
+            android:singleLine="false"            
+            />
+
+    <Button
+        android:id="@+id/quan_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="评论"
+        android:textSize="19sp" />
+  </LinearLayout>
+</LinearLayout>
